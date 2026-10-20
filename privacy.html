@@ -21,7 +21,7 @@
   <p>Surface Interval &mdash; underwater video colour and dive reels</p>
 </header>
 
-<p class="updated">Last updated: 22 September 2026</p>
+<p class="updated">Last updated: 19 October 2026</p>
 
 <p>Surface Interval collects nothing. This document exists because Apple requires every app
 to have one (App Store Review Guideline 5.1.1(i)), not because there is much to
@@ -34,9 +34,9 @@ reporting and no third-party code of any kind in this app.</p>
 
 <h2>Network access</h2>
 
-<p>The app makes <strong>no network requests</strong> of its own. It contains no networking
-code at all. Nothing on your iPhone or Mac can leave it through this app, because there is no
-mechanism by which it could.</p>
+<p>The app makes <strong>no network requests</strong> to us or to anyone else. Nothing about you, your
+videos or your photos is sent anywhere. The one thing it keeps in your own iCloud is described below:
+the receipt for a Diver.Today App Family purchase.</p>
 
 <p>One thing looks like network access and is not: a video you keep in iCloud rather than on
 the device. When the app needs to read such a video, it asks Apple's Photos framework for it,
@@ -44,9 +44,16 @@ and Photos fetches it from your own iCloud account over your own connection. Tha
 conversation between your device and Apple, on your behalf, in the same way the Photos app
 itself works. Nothing is sent to us, and there is no "us" to send it to.</p>
 
-<p>A purchase works the same way. Buying or restoring Week, Year or Lifetime is done by
-Apple's App Store on your behalf. The app learns only which of the three is in force; it
+<p>A purchase works the same way. Buying or restoring the Diver.Today App Family is done by
+Apple's App Store on your behalf. The app learns only which purchase is in force; it
 never sees your payment details, and nothing is sent to us.</p>
+
+<p>So that a purchase made in one Diver.Today app works in the others, the app keeps Apple's signed
+receipt for it in the private database of your own iCloud, in the family's container,
+iCloud.net.ismailov.divertoday, and reads the receipts the other apps keep there. A private database
+belongs to your Apple Account alone; we run no server and have no key to it. Signed out of iCloud,
+the app works the same, and only its own purchases count. This is in iPhone version 1.8; the Mac app follows with its next version, and until then keeps nothing in iCloud. The family's page says the rest:
+<a href="https://diver.today/privacy/">Privacy across the diver.today apps</a>.</p>
 
 <p>The optional music works the same way. Eight tracks are built into the app; the other 45 come
 from Apple's servers, delivered by Apple as it delivers an app update, and only when you tap
@@ -73,8 +80,8 @@ app's own storage on your iPhone or Mac.</p>
   <li>An export record &mdash; what the app did, how long it took, and what went wrong when
   something did.</li>
   <li>Your settings.</li>
-  <li>Which purchase is in force, if any, and when reels were made over the last two days,
-  for the daily cap.</li>
+  <li>Which purchase is in force, if any, and when reels and photos were saved over the last two
+  days, for the daily cap.</li>
 </ul>
 
 <p>All of it is written inside the app's own storage on your iPhone or Mac. It is included in your
